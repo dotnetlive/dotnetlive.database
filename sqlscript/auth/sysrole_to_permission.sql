@@ -3,5 +3,5 @@ CREATE TABLE  auth.sysrole_to_permission
 (
 	sysrole_sysid uuid,
 	permission_id uuid,
-    PRIMARY KEY (sysuser_sysid,sysrole_sysid)
+    PRIMARY KEY (sysrole_sysid,permission_id)
 );
