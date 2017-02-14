@@ -1,6 +1,6 @@
+DROP TABLE IF EXISTS auth.sysuser;
 drop sequence IF EXISTS auth.sysuser_id_seq;
 create sequence auth.sysuser_id_seq;
-DROP TABLE IF EXISTS auth.sysuser;
 CREATE TABLE auth.sysuser
 (
     sysid uuid,
