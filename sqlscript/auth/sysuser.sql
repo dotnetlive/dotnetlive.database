@@ -13,11 +13,9 @@ CREATE TABLE auth.sysuser
 	istwofactorenabled boolean DEFAULT false,
 	accessfailedcount int DEFAULT 0,
 	islockoutenabled boolean DEFAULT false,
-	lockoutenddate character varying, 
-	createdon character varying,
-	deletedon character varying,
-	status int DEFAULT 0,
-	creation timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
-    modification timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+	lockoutenddate timestamp with time zone DEFAULT CURRENT_TIMESTAMP, 
+	createdon timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+	deletedon timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+	"status" int DEFAULT 0,
     PRIMARY KEY (sysid)
 );
